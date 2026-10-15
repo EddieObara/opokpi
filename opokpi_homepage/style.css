@@ -36,32 +36,42 @@ img { max-width: 100%; display: block; }
 .menu-toggle { display: none; border: 0; background: transparent; padding: 8px; cursor: pointer; }
 .menu-toggle span { display: block; width: 24px; height: 2px; margin: 5px; background: var(--forest); }
 
-.hero { position: relative; min-height: 650px; display: flex; align-items: center; overflow: hidden; background: var(--forest-deep); color: white; }
-<<<<<<< HEAD
-.hero-image { position: absolute; inset: 0; background-image: url('images/hero.jpg'); background-position: center center; background-size: cover; opacity: .80; }
-=======
-.hero-image { position: absolute; inset: 0; background-image: url('images/hero.jpg'); background-position: center center; background-size: cover; opacity: .48; }
->>>>>>> 7c84572 (changed the background colour)
+
+.hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--forest-deep);
+  color: white;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background-image: url("images/hero.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.80;
+}
 
 .hero-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-<<<<<<< HEAD
-    rgba(7, 31, 27, 0.65) 0%,
-    rgba(9, 42, 35, 0.40) 42%,
-=======
-    rgba(7, 31, 27, 0.65) 20%,
-    rgba(9, 42, 35, 0.40) 72%,
->>>>>>> 7c84572 (changed the background colour)
-    rgba(9, 42, 35, 0.05) 100%
-  ),
-  linear-gradient(
-    0deg,
-    rgba(7, 31, 27, 0.15),
-    transparent 60%
-  );
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 31, 27, 0.65) 0%,
+      rgba(9, 42, 35, 0.40) 42%,
+      rgba(9, 42, 35, 0.05) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(7, 31, 27, 0.15),
+      transparent 60%
+    );
 }
 .hero-content { position: relative; z-index: 1; padding-block: 100px 112px; }
 .eyebrow { margin: 0 0 17px; color: var(--green); font-size: 10px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
